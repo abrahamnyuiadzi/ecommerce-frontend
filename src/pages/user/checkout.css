@@ -1,0 +1,119 @@
+.checkout {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.checkout-card {
+  width: 550px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* TITRE */
+.checkout-card h2 {
+  margin-bottom: 20px;
+}
+
+/* PRODUITS */
+.product {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.product img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-info h4 {
+  margin: 0;
+}
+
+.total {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #e63946;
+}
+
+/* INPUT */
+.checkout input,
+.checkout select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* PAYMENT */
+.payment-box {
+  margin-top: 25px;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.payment-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  margin: 15px 0;
+}
+
+/* QR */
+.qr-section {
+  margin-top: 20px;
+}
+
+.qr-section svg {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* BUTTON */
+.whatsapp-btn {
+  width: 100%;
+  padding: 14px;
+  background: #25d366;
+  color: white;
+  border: none;
+  margin-top: 25px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .checkout {
+    padding: 20px;
+  }
+
+  .checkout-card {
+    width: 100%;
+  }
+
+  .product {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+}
