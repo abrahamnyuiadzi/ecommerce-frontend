@@ -5,7 +5,7 @@ import "./navbar.css";
 export default function Navbar() {
   const { cart } = useCart();
 
-  const token = localStorage.getItem("token");
+  // const token = localStorage.getItem("token");
 
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
 

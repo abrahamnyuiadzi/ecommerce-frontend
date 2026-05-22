@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
-import QRCode from "react-qr-code";
+// import QRCode from "react-qr-code";
 import "./checkout.css";
 import { QRCodeCanvas } from "qrcode.react";
 
