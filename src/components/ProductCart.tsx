@@ -10,7 +10,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link to={`/product/${product.id}`}>
     <div className="card">
-      <img src={`http://127.0.0.1:8000/storage/${product.image}`} />
+      <img src={`https://ecommerce-api-8cx4.onrender.com/${product.image}`} />
 
       <h3>{product.name}</h3>
        
