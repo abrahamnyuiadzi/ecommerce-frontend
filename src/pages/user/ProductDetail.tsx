@@ -51,8 +51,7 @@ export default function ProductDetail() {
 
   // 🔥 galerie
   const gallery = [
-    `http://127.0.0.1:8000/storage/${product.image}`,
-     `http://127.0.0.1:8000/storage/${product.image}`,
+
      `http://127.0.0.1:8000/storage/${product.image}`
   ];
 

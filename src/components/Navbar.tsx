@@ -2,26 +2,65 @@ import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import "./navbar.css";
 
-export default function Navbar() {
+
+type Props = {
+  search?: string;
+  setSearch?: (value: string) => void;
+};
+
+export default function Navbar({
+  search = "",
+  setSearch
+}: Props) {
+
   const { cart } = useCart();
 
-  // const token = localStorage.getItem("token");
-
-  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+  const totalItems = cart.reduce(
+    (sum, item) => sum + item.quantity,
+    0
+  );
 
   return (
+
     <div className="navbar">
-      <Link to="/" className="logo">Elinam Shop</Link>
 
-      <input className="search" placeholder="Rechercher..." />
+      {/* LOGO */}
+      <Link to="/" className="logo">
+        Elinam Shop
+      </Link>
 
+      {/* SEARCH */}
+     <div className="search-box">
+
+  <input
+    className="search"
+    placeholder="Rechercher..."
+    value={search}
+    onChange={(e) =>
+      setSearch?.(e.target.value)
+    }
+  />
+
+
+
+</div>
+
+      {/* RIGHT */}
       <div className="nav-right">
-        <Link to="/cart">🛒 ({totalItems})</Link>
 
-    <Link to="/login" className="profile">
-  👤
-</Link>
+        <Link to="/cart">
+          🛒 ({totalItems})
+        </Link>
+
+        <Link
+          to="/login"
+          className="profile"
+        >
+          👤
+        </Link>
+
       </div>
+
     </div>
   );
 }
