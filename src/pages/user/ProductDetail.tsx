@@ -166,7 +166,7 @@ export default function ProductDetail() {
           {/* Boutons */}
           <div className="buttons">
             <button className="buy-btn" onClick={buyNow}>
-              Payer maintenant
+              Envoyer un message 
             </button>
             <button className="cart-btn">
               Ajouter au panier

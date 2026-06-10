@@ -151,7 +151,7 @@ Paiement: ${paymentMethod}
         <div className="payment-box">
 
           <h3>
-            Envoyez le paiement sur :
+            Envoyez le paiement  sur :
           </h3>
 
           <div className="payment-number">
