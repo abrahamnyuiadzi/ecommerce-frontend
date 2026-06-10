@@ -1,13 +1,20 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  background: #eaeded;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
+  gap: 24px;
+  padding: 30px 20px;
+  background: #f5f5f5;
 }
-h1{
-    text-align: center;
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+h1 {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #222;
+  padding: 20px 0 4px;
+  /* Ligne dorée décorative sous le titre — signature du design */
+  border-bottom: 3px solid #f0c040;
+  width: fit-content;
+  margin: 0 auto 10px;
 }
-
