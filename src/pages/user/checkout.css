@@ -117,3 +117,17 @@
   }
 
 }
+
+
+/* CHAMP OBLIGATOIRE vide après tentative */
+.checkout input.error {
+  border-color: #e63946;
+  background: #fff5f5;
+}
+
+.error-msg {
+  color: #e63946;
+  font-size: 12px;
+  margin-top: 6px;
+  margin-left: 2px;
+}
